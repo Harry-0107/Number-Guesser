@@ -69,14 +69,14 @@ document.querySelector('.check').addEventListener('click' , function() {
 });
 
 
-//Again button
+//Try Again button
 document.querySelector('.again').addEventListener('click', function() {
 
     //main body restoration
     score = 20;
     number = Math.trunc(Math.random()*20) + 1;
     document.querySelector('.message').textContent = '💭 Start guessing...';
-    document.querySelector('.score').textContent = score; //the input is in textContent format
+    document.querySelector('.score').textContent = score;
     document.querySelector('.guess').value = '';
     document.querySelector('.number').textContent = '?';
 
